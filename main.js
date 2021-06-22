@@ -5,7 +5,7 @@
 const AWS = require('aws-sdk')
 const dotenv = require('dotenv');
 dotenv.config();
-const bucket        = process.env.S3_BUCKET_NAME // the bucketname without s3://
+const bucket        = process.env.S3_BUCKET_NAME
 const photo_source  = process.env.PHOTO_SOURCE
 const photo_target  = process.env.PHOTO_TARGET
 AWS.config.update({
