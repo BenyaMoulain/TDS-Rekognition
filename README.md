@@ -39,6 +39,6 @@ SIMILARITY_THRESHOLD: Porcentaje de similitud que se requerirá para considerar 
 Ejecutar en la raiz del proyecto:
 
 ```bash
-npm i
+npm install
 node main.js
 ```
