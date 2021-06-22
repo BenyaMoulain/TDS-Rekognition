@@ -32,7 +32,7 @@ AWS.config.update({
    }
    client.compareFaces(params, function(err, response) {
      if (err) {
-       console.log(err, err.stack); // an error occurred
+       console.log(err, err.stack);
      } else {
        response.FaceMatches.forEach(data => {
          let position   = data.Face.BoundingBox
@@ -42,6 +42,5 @@ AWS.config.update({
        if(response.FaceMatches.length < 1) {
          console.log('Las imagenes no contienen caras que coincidan')
        }
-      
-     } // if
+     }
    });
